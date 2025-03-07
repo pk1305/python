@@ -1,0 +1,11 @@
+import pandas as pd
+
+# Creating a DataFrame
+data = [(1, 'Alice', 25), (2, 'Bob', 30), (3, 'Charlie', 22)]
+df = pd.DataFrame(data, columns=['ID', 'Name', 'Age'])
+
+# Setting 'ID' as the index
+df = df.set_index('ID')
+
+# Display DataFrame
+print(df)
